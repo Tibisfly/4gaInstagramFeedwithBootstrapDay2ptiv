@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram photo feed</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                                <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                    Create a new post
+                                </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<textarea class="form-control" aria-label="With textarea"></textarea>
+					</div>
+					<div class="modal-body">
+						<i class="fas fa-camera"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-success">Publish</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                        aria-selected="true"><i class="fas fa-th-large"></i></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                        aria-selected="false"><i class="fas fa-stop"></i></a>
+                </li>
+            </ul>
+       
+
+
+		<div class="tab-content bg-light" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="d-flex flex-column align-items-center">         
+                        <div class="card m-4 py-3" style="width: 30rem;">
+                            <div class="card-body m-1 py-1">
+                                <h5 class="card-title">My first photo<small class="text-muted">12/13</small></h5>
+                                <img src="https://media4.giphy.com/media/gtakVlnStZUbe/giphy.webp" class="card-img-top " alt="...">
+                                <p class="card-text my-auto py-3"><strong>155 likes</strong></p>
+                                <p class="card-text py-3">Hola profesor de 4Geeks Academy que vaya a revisar esto, quiero que sepan que no consigo arreglar el width de la otra página y el gift que coloqué es para que me imaginen después de casi una semana intentando hacerlo sin éxito. Mentoría para eso</p>
+                            </div>
+							<div class="input-group mb-3 p-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><i class="far fa-heart"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Comment" aria-label="Comment" aria-describedby="basic-addon1">
+							</div>                 
+                        </div>
+                        
+                        <div class="card m-4 py-3" style="width: 30rem;">
+                            <div class="card-body m-1 py-1">
+                                <h5 class="card-title">My second photo<small class="text-muted">12/14</small></h5>
+                                <img src="https://media.giphy.com/media/lcYFNTaz4U9jy/giphy.gif" class="card-img-top " alt="...">
+                                <p class="card-text my-auto py-3"><strong>123 likes</strong></p>
+                                <p class="card-text my-auto">La verdad es que es muy emocionante poder crear cosas por lo aprendido en clases, mentorías y por leer con detenimiento la página de Bootstrap 4.5. Por cierto, espero sea responsive (correctamente).</p>
+                            </div>
+                            <div class="input-group mb-3 p-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><i class="far fa-heart"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Comment" aria-label="Comment" aria-describedby="basic-addon1">
+							</div>           
+                        </div>
+                            <div class="card m-4 py-3" style="width: 30rem;">
+                            <div class="card-body m-1 py-1">
+                                <h5 class="card-title">My third photo<small class="text-muted">12/14</small></h5>
+                                <img src="https://media.giphy.com/media/5wWf7H89PisM6An8UAU/giphy.gif" class="card-img-top " alt="...">
+                                <p class="card-text my-auto py-3"><strong>200 likes</strong></p>
+                                <p class="card-text my-auto">Lo que más me gusta de Bootstrap son los flex.</p>
+                            </div>
+                            <div class="input-group mb-3 p-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><i class="far fa-heart"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Comment" aria-label="Comment" aria-describedby="basic-addon1">
+							</div>           
+                        </div>
+                    </div>
+                </div>
+
+                
+    
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShOVbHetxMhkWXDCPB2fbYvnbqt_8ArRubtQ&usqp=CAU"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShOVbHetxMhkWXDCPB2fbYvnbqt_8ArRubtQ&usqp=CAU"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShOVbHetxMhkWXDCPB2fbYvnbqt_8ArRubtQ&usqp=CAU"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp"/>
+                            </div>
+                            <div class="col-4">
+                                <img class="img-responsive" src="https://media1.giphy.com/media/12XMGIWtrHBl5e/200.webp"/>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
